@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<template encoding-version="1.2">
+    <description></description>
+    <groupId>db1950a8-016d-1000-d3fa-cfd55c637d00</groupId>
+    <name>GetCurrentWeather.3</name>
+    <snippet>
+        <processors>
+            <id>bbe39ad3-be76-30c6-0000-000000000000</id>
+            <parentGroupId>56e12d6d-ae53-3ddd-0000-000000000000</parentGroupId>
+            <position>
+                <x>0.0</x>
+                <y>0.0</y>
+            </position>
+            <bundle>
+                <artifact>nifi-update-attribute-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.9.2</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>Delete Attributes Expression</key>
+                        <value>
+                            <name>Delete Attributes Expression</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Store State</key>
+                        <value>
+                            <name>Store State</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Stateful Variables Initial Value</key>
+                        <value>
+                            <name>Stateful Variables Initial Value</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>canonical-value-lookup-cache-size</key>
+                        <value>
+                            <name>canonical-value-lookup-cache-size</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>data_path</key>
+                        <value>
+                            <name>data_path</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>filename</key>
+                        <value>
+                            <name>filename</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>loc</key>
+                        <value>
+                            <name>loc</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>token</key>
+                        <value>
+                            <name>token</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>units</key>
+                        <value>
+                            <name>units</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>url</key>
+                        <value>
+                            <name>url</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>Delete Attributes Expression</key>
+                    </entry>
+                    <entry>
+                        <key>Store State</key>
+                        <value>Do not store state</value>
+                    </entry>
+                    <entry>
+                        <key>Stateful Variables Initial Value</key>
+                    </entry>
+                    <entry>
+                        <key>canonical-value-lookup-cache-size</key>
+                        <value>100</value>
+                    </entry>
+                    <entry>
+                        <key>data_path</key>
+                        <value>c:\temp\nifi-1.9.2\weather</value>
+                    </entry>
+                    <entry>
+                        <key>filename</key>
+                        <value>weather.json</value>
+                    </entry>
+                    <entry>
+                        <key>loc</key>
+                        <value>zip=20151,us</value>
+                    </entry>
+                    <entry>
+                        <key>token</key>
+                        <value>appid=xxx</value>
+                    </entry>
+                    <entry>
+                        <key>units</key>
+                        <value>units=imperial</value>
+                    </entry>
+                    <entry>
+                        <key>url</key>
+                        <value>http://api.openweathermap.org/data/2.5/weather</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>UpdateAttribute</name>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.attributes.UpdateAttribute</type>
+        </processors>
+    </snippet>
+    <timestamp>10/21/2019 13:50:55 EDT</timestamp>
+</template>
